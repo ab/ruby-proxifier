@@ -5,6 +5,7 @@ require_relative "uri/socks"
 
 require_relative "proxifier/version"
 
+require_relative "proxifier/proxy"
 require_relative "proxifier/proxies/http"
 require_relative "proxifier/proxies/socks"
 require_relative "proxifier/proxies/socks"

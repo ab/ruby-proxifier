@@ -6,8 +6,7 @@ This is a fork of https://github.com/samuelkadolph/ruby-proxifier
 
 Changes in the fork:
 
-- **v1.0.5:** Fix uninitalized class variable error on newer ruby versions.
-  Remove use of autoload.
+- **v1.1.0:** Fix schemes to work with Ruby >= 3.1. Remove use of autoload.
 
 - **v1.0.4:** Allow customizing HTTP User-Agent header sent when connecting to
   proxy.

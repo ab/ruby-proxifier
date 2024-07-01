@@ -1,15 +1,17 @@
+# frozen_string_literal: true
+
 require "uri"
-require "uri/socks"
+require_relative "uri/socks"
+
+require_relative "proxifier/version"
+
+require_relative "proxifier/proxies/http"
+require_relative "proxifier/proxies/socks"
+require_relative "proxifier/proxies/socks"
+require_relative "proxifier/proxies/socks4"
+require_relative "proxifier/proxies/socks4a"
 
 module Proxifier
-  require "proxifier/version"
-
-  autoload :HTTPProxy, "proxifier/proxies/http"
-  autoload :SOCKSProxy, "proxifier/proxies/socks"
-  autoload :SOCKS5Proxy, "proxifier/proxies/socks"
-  autoload :SOCKS4Proxy, "proxifier/proxies/socks4"
-  autoload :SOCKS4AProxy, "proxifier/proxies/socks4a"
-
   def self.Proxy(url, options = {})
     url = URI.parse(url)
 

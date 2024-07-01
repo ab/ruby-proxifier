@@ -1,6 +1,7 @@
 require "socket"
 require "uri"
-require "uri/socks"
+
+require_relative "../uri/socks"
 
 module Proxifier
   class Proxy

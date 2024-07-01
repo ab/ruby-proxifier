@@ -1,4 +1,4 @@
-require_relative "proxifier/version"
+require_relative "lib/proxifier/version"
 
 Gem::Specification.new do |s|
   s.name        = "proxifier-fork"

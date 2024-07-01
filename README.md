@@ -1,17 +1,29 @@
 # ruby-proxifier
 
+## Fork status
+
+This is a fork of https://github.com/samuelkadolph/ruby-proxifier
+
+Changes in the fork:
+
+- **v1.0.5:** Fix uninitalized class variable error on newer ruby versions.
+  Remove use of autoload.
+
+- **v1.0.4:** Allow customizing HTTP User-Agent header sent when connecting to
+  proxy.
+
 ## Installing
 
 ### Recommended
 
 ```
-gem install proxifier
+gem install proxifier-fork
 ```
 
 ### Edge
 
 ```
-git clone https://github.com/samuelkadolph/ruby-proxifier
+git clone https://github.com/ab/ruby-proxifier
 cd ruby-proxifier && rake install
 ```
 
@@ -76,7 +88,7 @@ precedence):
 ### Ruby
 
 ```ruby
-require "proxifier/proxy"
+require "proxifier"
 
 proxy = Proxifier::Proxy("socks://localhost")
 socket = proxy.open("www.google.com", 80)

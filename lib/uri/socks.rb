@@ -5,6 +5,7 @@ module URI
     DEFAULT_PORT = 1080
     COMPONENT = [:scheme, :userinfo, :host, :port, :query].freeze
   end
+  @@schemes = {}
   @@schemes["SOCKS"] = SOCKS
   @@schemes["SOCKS5"] = SOCKS
 
